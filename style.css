@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
+* {
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* =========================
+   MEGA MENU
+========================== */
+.dropdown-menu {
+    left: 0;
+    right: 0;
+}
+
+.dropdown-item {
+    padding: 6px 0;
+}
+
+.dropdown-item:hover {
+    background: transparent;
+    color: #000000;
+}
+
+/* =========================
+   HERO VIDEO BACKGROUND
+========================== */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Video */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Gradient overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(79,70,229,0.85),
+        rgba(14,165,233,0.85)
+    );
+    z-index: 1;
+}
+
+/* Make content above overlay */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
